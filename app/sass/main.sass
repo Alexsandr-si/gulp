@@ -1,5 +1,4 @@
 @import "fonts"
-@import "libs"
 @import "base"
 @import "vars"
 body
@@ -13,6 +12,13 @@ body
     color: #fff
     margin: 0
     padding: 0
+h1,h2,h3,h4,h5,h6
+    text-transform: uppercase
+    line-height: 1.4
+    font-family: 'Montserrat-rst'
+html.mm-wrapper_opened
+    overflow-y: scroll
+
 .top_header
     min-height: 700px
     background-repeat: no-repeat
@@ -21,17 +27,114 @@ body
     height: 100vh
     background-color: $grey_c
 .top_line
-    position: absolute
+    position: relative
     width: 100%
     padding: 40px
     z-index: 1
     .logo
+        position: absolute
         width: 175px
         margin-left: 30px
+        top: 30px
     .fhone
         position: absolute
-        right: 75px
+        right: 100px
         top: 30px
         font-size: 22px
+        color: #fff
+        font-weight: 600
+        .fa
+            font-size: 30px
+            margin-right: 15px
+    .menu_top
+        position: absolute
+        right: 10px
+        top: 22px
+        .hamburger-inner,.hamburger-inner::after, .hamburger-inner::before
+            background-color: $accent
+            border-radius: 0
+.mm-panel_has-navbar
+    padding-top: 100px
+.mm-panel
+    .mm-navbar
+        border-bottom: none
+        .mm-navbar__title
+            padding-bottom: 5px
+            padding-top: 40px
+            font-size: 20px
+#my-menu
+    background-color: $grey_c
+    li
+        font-size: 20px
+        font-family: $default-font
+.mm-listitem_selected
+    color: $accent
+    background-color: #dcdcdc
+.mm-listitem
+    border-bottom: none
+    &::after
+         border-bottom: none
+.mm-listitem .mm-btn_next
+    &::before
+        border: none
+.mm-listitem
+    a
+        padding-left: 10%
+        background-color: $grey_c
+        &:hover
+            color: $accent
+            background-color: #dcdcdc
+            transition: color 1s
+            transition: background-color 1s
+            
+        &::before
+            content: '\f085'
+            font: normal normal normal 14px/1 FontAwesome
+            padding-right: 15px
+.mm-btn_prev
+    &:hover
+        background-color: #dcdcdc
+    
+.myButton 
+	-moz-box-shadow: inset 0px 1px 3px 0px #9fb4f2
+	-webkit-box-shadow: inset 0px 1px 3px 0px #9fb4f2
+	box-shadow: inset 0px 1px 3px 0px #9fb4f2
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #983222), color-stop(1, #983222))
+	background: -moz-linear-gradient(top, #983222 5%, #983222 100%)
+	background: -webkit-linear-gradient(top, #983222 5%, #983222 100%)
+	background: -o-linear-gradient(top, #983222 5%, #983222 100%)
+	background: -ms-linear-gradient(top, #983222 5%, #983222 100%)
+	background: linear-gradient(to bottom, #983222 5%, #983222 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#983222', endColorstr='#983222',GradientType=0)
+	background-color: #983222
+	-moz-border-radius: 5px
+	-webkit-border-radius: 5px
+	border-radius: 5px 
+	border: 1px solid #4e6096
+	display: inline-block
+	cursor: pointer
+	color: #ffffff
+	font-weight: bold
+	padding: 11px 23px
+	text-decoration: none
+	text-shadow: 0px -1px 0px #283966
+.myButton:hover 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #983222), color-stop(1, #983222))
+	background: -moz-linear-gradient(top, #983222 5%, #983222 100%)
+	background: -webkit-linear-gradient(top, #983222 5%, #983222 100%)
+	background: -o-linear-gradient(top, #983222 5%, #983222 100%);
+	background: -ms-linear-gradient(top, #983222 5%, #983222 100%)
+	background: linear-gradient(to bottom, #983222 5%, #983222 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#983222', endColorstr='#983222',GradientType=0)
+	background-color: #983222
+
+ 
+.myButton
+    &:active 
+        position: relative
+        top: 1px
+
+            
+            
     
 @import "media" // Всегда в конце
