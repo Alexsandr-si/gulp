@@ -18,7 +18,7 @@ gulp.task('cssnano', ['sasswork'], function(){
     .pipe(gulp.dest('app/css'))
 });
 gulp.task('scripts', function(){
-    return gulp.src(['app/libs/jquery/dist/jquery.min.js','app/libs/magnific-popup/dist/jquery.magnific-popup.min.js','app/libs/parallax/deploy/jjquery.parallax.min.js',])
+    return gulp.src(['app/libs/jquery/dist/jquery-3.3.1.min.js','app/libs/magnific-popup/dist/jquery.magnific-popup.min.js','app/libs/parallax/deploy/jjquery.parallax.min.js','app/libs/mmenu/dist/jquery.mmenu.all.js ',])
     .pipe(concat('libs.min.js'))
     .pipe(ugli())
     .pipe(gulp.dest('app/js'))

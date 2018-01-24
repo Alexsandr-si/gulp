@@ -1,7 +1,37 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
 body
-    background-color: #fff
-    font-size: 50px
-    text-align: center
-    color: green
-    text-decoration: uppercase
+    font-size: 16px
+    position: relative
+    line-height: 1.75 
+    overflow-x: hidden
+    opacity: 1
+    font-family: $default-font
+    letter-spacing: 1px
+    color: #fff
+    margin: 0
+    padding: 0
+.top_header
+    min-height: 700px
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    height: 100vh
+    background-color: $grey_c
+.top_line
+    position: absolute
+    width: 100%
+    padding: 40px
+    z-index: 1
+    .logo
+        width: 175px
+        margin-left: 30px
+    .fhone
+        position: absolute
+        right: 75px
+        top: 30px
+        font-size: 22px
     
+@import "media" // Всегда в конце

@@ -1,14 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head lang="ru">
     <meta charset="UTF-8">
     <title>Document</title>
+    <meta name="theme-color" content="#9CC2CE">
+    <meta name="msapplication-navbutton-color" content="#9CC2CE">
+    <meta name="description" content=" description">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <style>
+        body {
+            overflow-x: hidden;
+            opacity: 0;
+        }
+
+        html {
+            background-color: #636d6b;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="my-page">
+        <div id="my-header">
+            <header class="top_header" style="background-image: url(img/bg4.jpg)">
+                <div class="top_line">
+                    <div class="logo"><a href=""><img src="img/logo.png" alt="logo"></a></div> 
+                    <div class="fhone"><i class="fa fa-mobile"></i>+7(495)111-11-11</div>
+                </div>
+                <nav id="my-menu">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about/">About us</a>
+                            <ul>
+                                <li><a href="/about/history/">History</a></li>
+                                <li><a href="/about/team/">The team</a></li>
+                                <li><a href="/about/address/">Our address</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/contact/">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            Next up:
+        </div>
+        <div id="my-content"></div>
+        <div id="my-footer"></div>
+    </div>
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-    <p>good bay2</p>
     <script src="js/libs.min.js"></script>
     <script src="js/common.js"></script>
 </body>
+
 </html>

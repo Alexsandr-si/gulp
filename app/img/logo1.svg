@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   sodipodi:docname="logo1.svg">
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient6011">
+      <stop
+         style="stop-color:#983222;stop-opacity:1;"
+         offset="0"
+         id="stop6007" />
+      <stop
+         style="stop-color:#983222;stop-opacity:0;"
+         offset="1"
+         id="stop6009" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient6003"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#983222;stop-opacity:1;"
+         offset="0"
+         id="stop6001" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient6011"
+       id="linearGradient6013"
+       x1="50.74249"
+       y1="138.46884"
+       x2="140.06801"
+       y2="138.46884"
+       gradientUnits="userSpaceOnUse" />
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter6027"
+       x="-0.0067951387"
+       width="1.0135903"
+       y="-0.05127512"
+       height="1.1025502">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="0.25215774"
+         id="feGaussianBlur6029" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="-98.571429"
+     inkscape:cy="560"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#983222;fill-opacity:1;stroke:#000000;stroke-width:0.265;stroke-opacity:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-linejoin:round;opacity:0.99;filter:url(#filter6027)"
+       x="49.892857"
+       y="142.02977"
+       id="text12"><tspan
+         sodipodi:role="line"
+         id="tspan10"
+         x="49.892857"
+         y="142.02977"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:13.22916603px;font-family:Montserrat;-inkscape-font-specification:'Montserrat Bold';letter-spacing:0px;word-spacing:0px;fill:#983222;stroke-width:0.265;font-size:11.28888889px;fill-opacity:1;stroke:#000000;stroke-opacity:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-linejoin:round;"
+         dy="0 0 0 -0.059999734 0 0 0 1.6199996"
+         dx="0 0 0 0 0 0 0 -0.07">Рос<tspan
+   style="opacity:0;fill:#983222;font-size:11.28888889px;fill-opacity:1;stroke:#000000;stroke-opacity:0;stroke-width:0.265;stroke-miterlimit:4;stroke-dasharray:none;stroke-linejoin:round;"
+   id="tspan14"
+   dy="-1.5599999"
+   dx="0.07">Атом</tspan>Аудит</tspan></text>
+  </g>
+</svg>
