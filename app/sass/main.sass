@@ -15,6 +15,13 @@ body
 body
     a
         text-decoration: none
+body a
+    &:hover
+       text-decoration: none
+body ul
+    list-style: none
+    padding: 0
+    margin: 0
 h1,h2,h3,h4,h5,h6
     text-transform: uppercase
     line-height: 1.4
@@ -29,6 +36,7 @@ html.mm-wrapper_opened
     background-position: center
     height: 100vh
     background-color: $grey_c
+    position: relative
 .top_line
     position: relative
     width: 100%
@@ -48,7 +56,7 @@ html.mm-wrapper_opened
         font-weight: 600
         white-space: nowrap
         .fa
-            font-size: 30px
+            font-size: 22px
             margin-right: 15px
     .menu_top
         position: absolute
@@ -137,11 +145,12 @@ html.mm-wrapper_opened
         top: 1px
 .flex_header
     display: flex
-    height: 90%
+    height: 100%
     position: relative
     top: 0
     .flex_box
         margin: auto
+        margin-top: 70px
         text-align: center
         a
             text-transform: uppercase
@@ -233,9 +242,103 @@ html.mm-wrapper_opened
         font-size: 20px
         color: $grey_c
         font-weight: 400
+.carousel-services
+    position: relative
+    .owl-nav
+        position: absolute
+        top: 0
+        left: 0
+        display: block
+        font-size: 30px
+        width: 100%
+        .owl-prev
+            display: inline-block
+            float: left
+            margin-left: 5px
+        .owl-next
+            display: inline-block
+            float: right
+            margin-right: 5px
+    .carousel-services-item
+        opacity: 0.8
+        transition: opacity .8s ease
+        border-radius: 10px
+        &:hover
+            opacity: 1
+            transition: opacity .8s ease
+    .carousel-services-content
+        background-color: rgba(#000, .35)
+        position: relative
+        color: #fff
+        text-align: center
+        padding: 20px 0
+        img
+            width: 40%
+            margin: auto
+        h3
+            margin-top: 20px
+            font-weight: bold
+        ul
+            li
+                padding: 15px 0
+                border-bottom: 1px solid rgba(#000, .4)
+                display: block
+                width: 76%
+                margin: auto
+                font-size: 20px
+        a
+            text-transform: uppercase
+            letter-spacing: 2px
+            font-family: 'Raleway-rst'
+            margin-top: 30px
+            color: $accent
+            font-weight: 400
+            &:hover
+                text-decoration: none
+                color: #781202
+    .second_block
+        background-image: url("../img/carosel2.jpg")
+    .first_block
+        background-image: url("../img/carosel.jpg")
+            
         
-    
-    
+.myButton-white 
+	-moz-box-shadow: inset 0px 1px 3px 0px #bababa
+	-webkit-box-shadow: inset 0px 1px 3px 0px #bababa
+	box-shadow: inset 0px 1px 3px 0px #bababa
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f2f2ea), color-stop(1, #fafafa))
+	background: -moz-linear-gradient(top, #f2f2ea 5%, #fafafa 100%)
+	background: -webkit-linear-gradient(top, #f2f2ea 5%, #fafafa 100%)
+	background: -o-linear-gradient(top, #f2f2ea 5%, #fafafa 100%)
+	background: -ms-linear-gradient(top, #f2f2ea 5%, #fafafa 100%)
+	background: linear-gradient(to bottom, #f2f2ea 5%, #fafafa 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2f2ea', endColorstr='#fafafa',GradientType=0)
+	background-color: #f2f2ea
+	-moz-border-radius: 5px
+	-webkit-border-radius: 5px
+	border-radius: 5px
+	border: 1px solid #f7f7f7
+	display: inline-block
+	cursor: pointer
+	color: #bfbfbe
+	padding: 11px 23px
+	text-decoration: none
+	text-shadow: 0px -1px 0px #fafafa
+.myButton-white
+    &:hover 
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #fafafa), color-stop(1, #f2f2ea))
+        background: -moz-linear-gradient(top, #fafafa 5%, #f2f2ea 100%)
+        background: -webkit-linear-gradient(top, #fafafa 5%, #f2f2ea 100%)
+        background: -o-linear-gradient(top, #fafafa 5%, #f2f2ea 100%)
+        background: -ms-linear-gradient(top, #fafafa 5%, #f2f2ea 100%)
+        background: linear-gradient(to bottom, #fafafa 5%, #f2f2ea 100%)
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa', endColorstr='#f2f2ea',GradientType=0)
+        background-color: #fafafa
+.myButton-white
+    &:active 
+        position: relative
+        top: 1px
+
             
     
 @import "media" // Всегда в конце

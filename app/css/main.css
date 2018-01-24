@@ -66,6 +66,14 @@ body {
 body a {
   text-decoration: none; }
 
+body a:hover {
+  text-decoration: none; }
+
+body ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
 h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   line-height: 1.4;
@@ -80,7 +88,8 @@ html.mm-wrapper_opened {
   background-size: cover;
   background-position: center;
   height: 100vh;
-  background-color: #BFBFBE; }
+  background-color: #BFBFBE;
+  position: relative; }
 
 .top_line {
   position: relative;
@@ -101,7 +110,7 @@ html.mm-wrapper_opened {
     font-weight: 600;
     white-space: nowrap; }
     .top_line .fhone .fa {
-      font-size: 30px;
+      font-size: 22px;
       margin-right: 15px; }
   .top_line .menu_top {
     position: absolute;
@@ -195,11 +204,12 @@ html.mm-wrapper_opened {
 
 .flex_header {
   display: flex;
-  height: 90%;
+  height: 100%;
   position: relative;
   top: 0; }
   .flex_header .flex_box {
     margin: auto;
+    margin-top: 70px;
     text-align: center; }
     .flex_header .flex_box a {
       text-transform: uppercase;
@@ -295,6 +305,101 @@ html.mm-wrapper_opened {
     font-size: 20px;
     color: #BFBFBE;
     font-weight: 400; }
+
+.carousel-services {
+  position: relative; }
+  .carousel-services .owl-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    font-size: 30px;
+    width: 100%; }
+    .carousel-services .owl-nav .owl-prev {
+      display: inline-block;
+      float: left;
+      margin-left: 5px; }
+    .carousel-services .owl-nav .owl-next {
+      display: inline-block;
+      float: right;
+      margin-right: 5px; }
+  .carousel-services .carousel-services-item {
+    opacity: 0.8;
+    transition: opacity .8s ease;
+    border-radius: 10px; }
+    .carousel-services .carousel-services-item:hover {
+      opacity: 1;
+      transition: opacity .8s ease; }
+  .carousel-services .carousel-services-content {
+    background-color: rgba(0, 0, 0, 0.35);
+    position: relative;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0; }
+    .carousel-services .carousel-services-content img {
+      width: 40%;
+      margin: auto; }
+    .carousel-services .carousel-services-content h3 {
+      margin-top: 20px;
+      font-weight: bold; }
+    .carousel-services .carousel-services-content ul li {
+      padding: 15px 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+      display: block;
+      width: 76%;
+      margin: auto;
+      font-size: 20px; }
+    .carousel-services .carousel-services-content a {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-family: 'Raleway-rst';
+      margin-top: 30px;
+      color: #983222;
+      font-weight: 400; }
+      .carousel-services .carousel-services-content a:hover {
+        text-decoration: none;
+        color: #781202; }
+  .carousel-services .second_block {
+    background-image: url("../img/carosel2.jpg"); }
+  .carousel-services .first_block {
+    background-image: url("../img/carosel.jpg"); }
+
+.myButton-white {
+  -moz-box-shadow: inset 0px 1px 3px 0px #bababa;
+  -webkit-box-shadow: inset 0px 1px 3px 0px #bababa;
+  box-shadow: inset 0px 1px 3px 0px #bababa;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f2f2ea), color-stop(1, #fafafa));
+  background: -moz-linear-gradient(top, #f2f2ea 5%, #fafafa 100%);
+  background: -webkit-linear-gradient(top, #f2f2ea 5%, #fafafa 100%);
+  background: -o-linear-gradient(top, #f2f2ea 5%, #fafafa 100%);
+  background: -ms-linear-gradient(top, #f2f2ea 5%, #fafafa 100%);
+  background: linear-gradient(to bottom, #f2f2ea 5%, #fafafa 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2f2ea', endColorstr='#fafafa',GradientType=0);
+  background-color: #f2f2ea;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #f7f7f7;
+  display: inline-block;
+  cursor: pointer;
+  color: #bfbfbe;
+  padding: 11px 23px;
+  text-decoration: none;
+  text-shadow: 0px -1px 0px #fafafa; }
+
+.myButton-white:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #fafafa), color-stop(1, #f2f2ea));
+  background: -moz-linear-gradient(top, #fafafa 5%, #f2f2ea 100%);
+  background: -webkit-linear-gradient(top, #fafafa 5%, #f2f2ea 100%);
+  background: -o-linear-gradient(top, #fafafa 5%, #f2f2ea 100%);
+  background: -ms-linear-gradient(top, #fafafa 5%, #f2f2ea 100%);
+  background: linear-gradient(to bottom, #fafafa 5%, #f2f2ea 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa', endColorstr='#f2f2ea',GradientType=0);
+  background-color: #fafafa; }
+
+.myButton-white:active {
+  position: relative;
+  top: 1px; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
