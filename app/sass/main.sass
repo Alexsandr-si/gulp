@@ -244,13 +244,30 @@ html.mm-wrapper_opened
         font-size: 20px
         color: $grey_c
         font-weight: 400
-        
+.services
+    position: relative
+    &::before
+        content: ''
+        background-image: url(../img/bg41.jpg)
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+        opacity: .7
+        width: 100%
+        height: 100%
+        position: absolute
+        top: 0
+        left: 0
 .section_h2
     padding-top: 30px
     padding-bottom: 10px
-    font-weight: 600
     color: #fff
-    background-color: $shadow
+    background-color: rgba(#000, .35)
+    position: relative
+    h2
+        font-weight: 600
+    p
+        font-size: 18px
 .carousel-services, .partners
     position: relative
     .owl-nav
@@ -268,14 +285,11 @@ html.mm-wrapper_opened
             display: inline-block
             float: right
             margin-right: 5px
-.carousel-services        
+.carousel-services
     .carousel-services-item
-        opacity: 0.8
+        opacity: 0.7
         transition: opacity .8s ease
         border-radius: 10px
-        background-position: center
-        background-repeat: no-repeat
-        background-size: cover
         &:hover
             opacity: 1
             transition: opacity .8s ease
@@ -284,17 +298,18 @@ html.mm-wrapper_opened
         position: relative
         color: #fff
         text-align: center
-        padding: 20px 0
+        padding: 60px 0
         img
             width: 40%
             margin: auto
+            margin-bottom: 40px
         h3
             margin-top: 20px
             font-weight: bold
         ul
             li
                 padding: 15px 0
-                border-bottom: 1px solid rgba(#000, .4)
+                border-bottom: 1px solid rgba(#fff, .8)
                 display: block
                 width: 76%
                 margin: auto
@@ -303,7 +318,7 @@ html.mm-wrapper_opened
             text-transform: uppercase
             letter-spacing: 2px
             font-family: 'Raleway-rst'
-            margin-top: 30px
+            margin-top: 60px
             color: $accent
             font-weight: 400
             &:hover
@@ -481,12 +496,79 @@ html.mm-wrapper_opened
 .header_block
     padding-top: 40px
     padding-bottom: 20px
+.s_partners
+    background-color: rgba(#000, .35)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    min-height: 500px
+    .partner_h2
+        padding-top: 30px
+        padding-bottom: 10px
+        color: #fff
+        position: relative
 .partners
     margin-top: 50px
     margin-bottom: 40px
     .carousel-partners-content
         padding: 0 20px
         margin: 0 20px
+footer
+    background-color: #80807F
+    .map
+        padding: 10px 0
+    .logo_footer
+        padding-top: 25px
+        text-align: center
+        img
+            padding-top: 20px
+        p
+            font-size: 18px
+            margin-top: 10px
+            
+    .footer_li
+        padding: 10px 0
+        width: 80%
+        margin-left: 10%
+        margin-top: 5%
+        display: block
+        li
+            line-height: 47px
+            font-size: 18px
+            display: block
+            text-align: left
+    .social_footer
+        margin-top: -10px
+        ul
+            margin: auto
+            padding: 0
+            list-style:  none
+            display: inline-block
+            width: 100%
+            text-align: center
+            li
+                margin: 0 20px 
+                display: inline-block
+                .fa
+                    &:hover
+                        color: $accent
+        a
+            font-size: 20px
+            color: #fff
+            background-color: rgba(#BFBFBE, .4)
+            border-radius: 10em
+            border: 1px solid rgba(#fff, .4)
+            display: block
+            height: 38px
+            width: 38px
+            text-align: center
+            margin: 20px 0
+            line-height: 38px
+            transition: background-color .5s ease
+            &:hover
+                background-color: #B1B1B0
+                transition: background-color .5s ease 
+            
             
             
     
