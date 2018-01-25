@@ -268,7 +268,7 @@ html.mm-wrapper_opened
         font-weight: 600
     p
         font-size: 18px
-.carousel-services, .partners
+.carousel-services
     position: relative
     .owl-nav
         position: absolute
@@ -277,6 +277,7 @@ html.mm-wrapper_opened
         display: block
         font-size: 30px
         width: 100%
+        color: $accent
         .owl-prev
             display: inline-block
             float: left
@@ -502,17 +503,31 @@ html.mm-wrapper_opened
     background-repeat: no-repeat
     background-position: center
     min-height: 500px
+    .owl-nav
+        position: absolute
+        top: -5px
+        left: -34px
+        display: block
+        font-size: 30px
+        width: 100%
+        color: $accent
+        .owl-prev
+            display: inline-block
+            float: left
+        .owl-next
+            display: inline-block
+            float: right
     .partner_h2
         padding-top: 30px
-        padding-bottom: 10px
+        margin-top: 10%
         color: #fff
         position: relative
 .partners
-    margin-top: 50px
-    margin-bottom: 40px
+    margin: auto
     .carousel-partners-content
-        padding: 0 20px
-        margin: 0 20px
+       width: 75%
+.flex_box_
+	margin-top: 8%
 footer
     background-color: #80807F
     .map
