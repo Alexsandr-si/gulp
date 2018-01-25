@@ -80,12 +80,10 @@
                                 <i class="fa fa-location-arrow"></i> г. Москва ул. Красная Пресня д1
                             </div>
                             <div class="col-4">
-                                <i class="fa fa-mobile"></i>
-                                +7(495)111-11-11
+                                <i class="fa fa-mobile"></i> +7(495)111-11-11
                             </div>
                             <div class="col-4">
-                                <i class="fa fa-clock-o"></i>
-                                Время работы: 8:00 - 19:00
+                                <i class="fa fa-clock-o"></i> Время работы: 8:00 - 19:00
                             </div>
                         </div>
                     </div>
@@ -95,9 +93,16 @@
         </div>
         <div id="my-content">
             <section class="services">
-               <div class="section_h2">
-                   <h2>Второй заголовок</h2>
-               </div>
+                <div class="section_h2">
+                    <div class="container">
+                        <div class="row">
+                            <col-12>
+                                <h2>Второй <span class="color_class">заголовок</span></h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia dolor explicabo error ipsa voluptatem pariatur et architecto vero, molestiae ut?</p>
+                            </col-12>
+                        </div>
+                    </div>
+                </div>
                 <div class="owl-carousel carousel-services">
                     <div class="carousel-services-item" style="background-image: url(img/carosel.jpg)">
                         <div class="carousel-services-content">
@@ -174,18 +179,18 @@
                 </div>
             </section>
             <section class="our_people">
-                <div class="people" style="background-image: url(img/photos/bg_people1.jpg)" >
+                <div class="people" style="background-image: url(img/photos/bg_people1.jpg)">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-5  align-self-center">
                                 <div class="people_wrap">
-                                    <h2>Наша команда</h2>
+                                    <h2>Наша <span class="color_class">команда</span></h2>
                                     <p><strong>росатомаудит</strong>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Продолжил великий даль наш напоивший.</p>
                                     <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Продолжил великий даль наш напоивший.</p>
                                 </div>
                             </div>
                             <div class="col-7">
-                                <div class="people-foto fotorama"  data-nav="thumbs" data-allowfullscreen="true"  data-transition="crossfade" data-arrows="false"  data-swipe="true"  data-click="true"  data-thumb-width="130"  data-thumb-height="85" data-thumb-margin="10">
+                                <div class="people-foto fotorama" data-nav="thumbs" data-allowfullscreen="true" data-transition="crossfade" data-arrows="false" data-swipe="true" data-click="true" data-thumb-width="130" data-thumb-height="85" data-thumb-margin="10">
                                     <img src="img/photos/firstman.jpg" alt="firstman">
                                     <img src="img/photos/secondwomen.jpg" alt="secondwomen">
                                     <img src="img/photos/thirdwomen.jpg" alt="thirdwomen">
@@ -198,8 +203,64 @@
             <section class="call_form">
                 <div class="container-fluid">
                     <div class="row">
+                        <div class="col-6 bgi_form" style="background-image: url(img/bg_form.jpg)"></div>
                         <div class="col-6 offset-6">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, molestias maxime quaerat molestiae dicta libero temporibus eius numquam quo blanditiis in aut itaque cum tempora inventore, officiis et voluptas excepturi!</p>
+                            <form action="" class="main_form">
+                                <div class="sucsess"><span>спасибо за заявку</span></div>
+                                <div class="form_header">
+                                    <div class="img_wrap">
+                                        <img src="img/logo2.png" alt="росатомаудит">
+                                    </div>
+                                    <span class="form_header">оставить заявку</span>
+                                    <p>оставте заявку и мы вам перезвоним</p>
+                                </div>
+                                <input type="hidden" name="project_name" value="site name">
+                                <input type="hidden" name="admin_email" value="admin_email">
+                                <input type="hidden" name="form_subject" value="form_subject">
+                                <input type="text" name="name" placeholder="Ваше имя..." required>
+                                <input type="email" name="email" placeholder="Ваш email..." required>
+                                <input type="text" name="phone" placeholder="Ваш телефон..." required>
+                                <select name="services" id="select-beast" required>
+                                   <option value disabled selected>Выберите услугу...</option>
+                                    <option>Услуга1</option>
+                                    <option>Услуга2</option>
+                                    <option>Услуга3</option>
+                                    <option>Услуга4</option>
+                                    <option>Услуга5</option>
+                                </select>
+                                <button class="myButton-white" type="submit">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="s_partners">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="header_block">
+                                <h2>Наши <span class="color_class">партнеры</span></h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               <div class="container">
+                    <div class="row">
+                        <div class="col-10 offset-1">
+                             <div class="owl-carousel partners">
+                                <div class="carousel-partners-content">
+                                    <img src="img/logo2.png" alt="росатомаудит">
+                                </div>
+                                <div class="carousel-partners-content">
+                                    <img src="img/logo2.png" alt="росатомаудит">
+                                </div>
+                                <div class="carousel-partners-content">
+                                    <img src="img/logo2.png" alt="росатомаудит">
+                                </div>
+                                <div class="carousel-partners-content">
+                                    <img src="img/logo2.png" alt="росатомаудит">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

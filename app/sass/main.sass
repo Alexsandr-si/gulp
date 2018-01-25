@@ -29,7 +29,8 @@ h1,h2,h3,h4,h5,h6
     text-align: center
 html.mm-wrapper_opened
     overflow-y: scroll
-
+.color_class
+    color: $accent
 .top_header
     min-height: 700px
     background-repeat: no-repeat
@@ -250,7 +251,7 @@ html.mm-wrapper_opened
     font-weight: 600
     color: #fff
     background-color: $shadow
-.carousel-services
+.carousel-services, .partners
     position: relative
     .owl-nav
         position: absolute
@@ -267,6 +268,7 @@ html.mm-wrapper_opened
             display: inline-block
             float: right
             margin-right: 5px
+.carousel-services        
     .carousel-services-item
         opacity: 0.8
         transition: opacity .8s ease
@@ -356,7 +358,6 @@ html.mm-wrapper_opened
             margin: 0 5%
             margin-top: -30px
             h2
-                color: $accent
                 letter-spacing: 3px
                 font-weight: 600
             p
@@ -382,8 +383,110 @@ html.mm-wrapper_opened
     cursor: pointer
 .fotorama__thumb-border
     border-color: $accent
-
-   
+.call_form
+    position: relative
+    &::before
+        content: ''
+        background-color: rgba($accent, .5)
+        position: absolute
+        right: 0
+        width: 50%
+        top: 0
+        height: 100%
+    .bgi_form
+        position: absolute
+        left: 0
+        content: ''
+        height: 100%
+        background-size: cover
+        background-repeat: no-repeat
+        background-position: center
+    .form_header
+        span
+            display: block
+            font-size: 30px
+            color: #fff
+            padding: 10px 0
+            text-transform: uppercase
+            text-align: left
+            width: 90%
+            margin-left: 5%
+        p
+            width: 90%
+            margin-left: 5%
+        .img_wrap
+            text-align: center
+            padding-top: 30px
+            width: 100%
+    .main_form
+        .sucsess
+            position: absolute
+            left: 0
+            top: 0
+            right: 0
+            bottom: 0
+            display: none
+            span
+                margin: auto
+                text-transform: uppercase
+                font-size: 24px
+                font-weight: 200
+            &.active
+                & ~ *
+                    filter: blur(10px)
+                    opacity: .4
+        input, select
+            width: 90%
+            margin: 2% 5%
+            padding: 10px
+            background-color: transparent
+            color: #fff
+            letter-spacing: 1.5px
+            font-size: 18px
+            border: 1px solid rgba(#fff, .7)
+            border-bottom: 2px solid rgba(#fff, .7)
+            border-radius: 2px
+            font-weight: 200
+        select
+            display: block
+            margin-bottom: 15px
+            width: 90%
+            margin: 2% 5%
+            -moz-appearance: none
+            -webkit-appearance: none
+            appearance: none
+            option
+                &:hover, &:active
+                    background-color: $accent
+        button
+            margin-top: 35px
+            margin-bottom: 35px
+            margin-left: 5%
+            color: rgba(#000, .7)
+            text-transform: uppercase
+            font-weight: 200
+        
+::-webkit-input-placeholder
+    opacity: 1
+    color: #fff
+::-ms-input-placeholder
+    opacity: 1
+    color: #fff
+::-moz-placeholder
+    opacity: 1
+    color: #fff
+::-placeholder
+    opacity: 1
+    color: #fff
+.header_block
+    padding-top: 40px
+    padding-bottom: 20px
+.partners
+    margin-top: 50px
+    margin-bottom: 40px
+    .carousel-partners-content
+        padding: 0 20px
+        margin: 0 20px
             
             
     

@@ -29,4 +29,38 @@ $(document).ready(function() {
         }
     }
     });
+    $('.partners').owlCarousel({
+        loop: true,
+        smartSpeed: 700,
+        nav: true,
+        navText: ['<i class="fa fa-angle-double-left"></i>','<i class="fa fa-angle-double-right"></i>'],
+        rresponsiveClass:true,
+        responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+             720:{
+            items:2,
+            
+        },
+        1100:{
+            items:3,
+        }}
+    });
+    $(".main_form").submit(function() { //Change
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			$(th).find('.sucsess').addClass('active').css('display', 'flex');
+			setTimeout(function() {
+                $(th).find('.sucsess').removeClass('active');
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	});
 });

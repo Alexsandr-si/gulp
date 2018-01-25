@@ -83,6 +83,9 @@ h1, h2, h3, h4, h5, h6 {
 html.mm-wrapper_opened {
   overflow-y: scroll; }
 
+.color_class {
+  color: #983222; }
+
 .top_header {
   min-height: 700px;
   background-repeat: no-repeat;
@@ -314,62 +317,64 @@ html.mm-wrapper_opened {
   color: #fff;
   background-color: rgba(0, 0, 0, 0.35); }
 
-.carousel-services {
+.carousel-services, .partners {
   position: relative; }
-  .carousel-services .owl-nav {
+  .carousel-services .owl-nav, .partners .owl-nav {
     position: absolute;
     top: 0;
     left: 0;
     display: block;
     font-size: 30px;
     width: 100%; }
-    .carousel-services .owl-nav .owl-prev {
+    .carousel-services .owl-nav .owl-prev, .partners .owl-nav .owl-prev {
       display: inline-block;
       float: left;
       margin-left: 5px; }
-    .carousel-services .owl-nav .owl-next {
+    .carousel-services .owl-nav .owl-next, .partners .owl-nav .owl-next {
       display: inline-block;
       float: right;
       margin-right: 5px; }
-  .carousel-services .carousel-services-item {
-    opacity: 0.8;
-    transition: opacity .8s ease;
-    border-radius: 10px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; }
-    .carousel-services .carousel-services-item:hover {
-      opacity: 1;
-      transition: opacity .8s ease; }
-  .carousel-services .carousel-services-content {
-    background-color: rgba(0, 0, 0, 0.35);
-    position: relative;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0; }
-    .carousel-services .carousel-services-content img {
-      width: 40%;
-      margin: auto; }
-    .carousel-services .carousel-services-content h3 {
-      margin-top: 20px;
-      font-weight: bold; }
-    .carousel-services .carousel-services-content ul li {
-      padding: 15px 0;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-      display: block;
-      width: 76%;
-      margin: auto;
-      font-size: 20px; }
-    .carousel-services .carousel-services-content a {
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-family: 'Raleway-rst';
-      margin-top: 30px;
-      color: #983222;
-      font-weight: 400; }
-      .carousel-services .carousel-services-content a:hover {
-        text-decoration: none;
-        color: #781202; }
+
+.carousel-services .carousel-services-item {
+  opacity: 0.8;
+  transition: opacity .8s ease;
+  border-radius: 10px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .carousel-services .carousel-services-item:hover {
+    opacity: 1;
+    transition: opacity .8s ease; }
+
+.carousel-services .carousel-services-content {
+  background-color: rgba(0, 0, 0, 0.35);
+  position: relative;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0; }
+  .carousel-services .carousel-services-content img {
+    width: 40%;
+    margin: auto; }
+  .carousel-services .carousel-services-content h3 {
+    margin-top: 20px;
+    font-weight: bold; }
+  .carousel-services .carousel-services-content ul li {
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    display: block;
+    width: 76%;
+    margin: auto;
+    font-size: 20px; }
+  .carousel-services .carousel-services-content a {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Raleway-rst';
+    margin-top: 30px;
+    color: #983222;
+    font-weight: 400; }
+    .carousel-services .carousel-services-content a:hover {
+      text-decoration: none;
+      color: #781202; }
 
 .myButton-white {
   -moz-box-shadow: inset 0px 1px 3px 0px #bababa;
@@ -419,7 +424,6 @@ html.mm-wrapper_opened {
       margin: 0 5%;
       margin-top: -30px; }
       .our_people .people .people_wrap h2 {
-        color: #983222;
         letter-spacing: 3px;
         font-weight: 600; }
       .our_people .people .people_wrap p {
@@ -449,6 +453,112 @@ html.mm-wrapper_opened {
 
 .fotorama__thumb-border {
   border-color: #983222; }
+
+.call_form {
+  position: relative; }
+  .call_form::before {
+    content: '';
+    background-color: rgba(152, 50, 34, 0.5);
+    position: absolute;
+    right: 0;
+    width: 50%;
+    top: 0;
+    height: 100%; }
+  .call_form .bgi_form {
+    position: absolute;
+    left: 0;
+    content: '';
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .call_form .form_header span {
+    display: block;
+    font-size: 30px;
+    color: #fff;
+    padding: 10px 0;
+    text-transform: uppercase;
+    text-align: left;
+    width: 90%;
+    margin-left: 5%; }
+  .call_form .form_header p {
+    width: 90%;
+    margin-left: 5%; }
+  .call_form .form_header .img_wrap {
+    text-align: center;
+    padding-top: 30px;
+    width: 100%; }
+  .call_form .main_form .sucsess {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: none; }
+    .call_form .main_form .sucsess span {
+      margin: auto;
+      text-transform: uppercase;
+      font-size: 24px;
+      font-weight: 200; }
+    .call_form .main_form .sucsess.active ~ * {
+      filter: blur(10px);
+      opacity: .4; }
+  .call_form .main_form input, .call_form .main_form select {
+    width: 90%;
+    margin: 2% 5%;
+    padding: 10px;
+    background-color: transparent;
+    color: #fff;
+    letter-spacing: 1.5px;
+    font-size: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 2px;
+    font-weight: 200; }
+  .call_form .main_form select {
+    display: block;
+    margin-bottom: 15px;
+    width: 90%;
+    margin: 2% 5%;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none; }
+    .call_form .main_form select option:hover, .call_form .main_form select option:active {
+      background-color: #983222; }
+  .call_form .main_form button {
+    margin-top: 35px;
+    margin-bottom: 35px;
+    margin-left: 5%;
+    color: rgba(0, 0, 0, 0.7);
+    text-transform: uppercase;
+    font-weight: 200; }
+
+::-webkit-input-placeholder {
+  opacity: 1;
+  color: #fff; }
+
+::-ms-input-placeholder {
+  opacity: 1;
+  color: #fff; }
+
+::-moz-placeholder {
+  opacity: 1;
+  color: #fff; }
+
+::-placeholder {
+  opacity: 1;
+  color: #fff; }
+
+.header_block {
+  padding-top: 40px;
+  padding-bottom: 20px; }
+
+.partners {
+  margin-top: 50px;
+  margin-bottom: 40px; }
+  .partners .carousel-partners-content {
+    padding: 0 20px;
+    margin: 0 20px; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
