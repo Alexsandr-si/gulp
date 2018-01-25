@@ -77,7 +77,8 @@ body ul {
 h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   line-height: 1.4;
-  font-family: 'Montserrat-rst'; }
+  font-family: 'Montserrat-rst';
+  text-align: center; }
 
 html.mm-wrapper_opened {
   overflow-y: scroll; }
@@ -306,6 +307,13 @@ html.mm-wrapper_opened {
     color: #BFBFBE;
     font-weight: 400; }
 
+.section_h2 {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  font-weight: 600;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.35); }
+
 .carousel-services {
   position: relative; }
   .carousel-services .owl-nav {
@@ -326,7 +334,10 @@ html.mm-wrapper_opened {
   .carousel-services .carousel-services-item {
     opacity: 0.8;
     transition: opacity .8s ease;
-    border-radius: 10px; }
+    border-radius: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
     .carousel-services .carousel-services-item:hover {
       opacity: 1;
       transition: opacity .8s ease; }
@@ -359,10 +370,6 @@ html.mm-wrapper_opened {
       .carousel-services .carousel-services-content a:hover {
         text-decoration: none;
         color: #781202; }
-  .carousel-services .second_block {
-    background-image: url("../img/carosel2.jpg"); }
-  .carousel-services .first_block {
-    background-image: url("../img/carosel.jpg"); }
 
 .myButton-white {
   -moz-box-shadow: inset 0px 1px 3px 0px #bababa;
@@ -400,6 +407,48 @@ html.mm-wrapper_opened {
 .myButton-white:active {
   position: relative;
   top: 1px; }
+
+.our_people {
+  position: relative; }
+  .our_people .people {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 30px; }
+    .our_people .people .people_wrap {
+      margin: 0 5%;
+      margin-top: -30px; }
+      .our_people .people .people_wrap h2 {
+        color: #983222;
+        letter-spacing: 3px;
+        font-weight: 600; }
+      .our_people .people .people_wrap p {
+        font-size: 18px; }
+    .our_people .people .people-foto {
+      margin: 0 5%; }
+    .our_people .people::before {
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.35); }
+
+.fotorama__nav-wrap {
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  padding: 0 10px; }
+
+.fotorama__thumb {
+  border: 4px solid #fff; }
+
+.fotorama__img {
+  cursor: pointer; }
+
+.fotorama__thumb-border {
+  border-color: #983222; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
