@@ -1,36 +1,9 @@
 @import "fonts"
 @import "base"
 @import "vars"
-body
-    font-size: 16px
-    position: relative
-    line-height: 1.75 
-    overflow-x: hidden
-    opacity: 1
-    font-family: $default-font
-    letter-spacing: 1px
-    color: #fff
-    margin: 0
-    padding: 0
-body
-    a
-        text-decoration: none
-body a
-    &:hover
-       text-decoration: none
-body ul
-    list-style: none
-    padding: 0
-    margin: 0
-h1,h2,h3,h4,h5,h6
-    text-transform: uppercase
-    line-height: 1.4
-    font-family: 'Montserrat-rst'
-    text-align: center
-html.mm-wrapper_opened
-    overflow-y: scroll
 .color_class
     color: $accent
+//--------------------------------header_start
 .top_header
     min-height: 700px
     background-repeat: no-repeat
@@ -67,6 +40,7 @@ html.mm-wrapper_opened
         .hamburger-inner,.hamburger-inner::after, .hamburger-inner::before
             background-color: $accent
             border-radius: 0
+//--------------------------------------menu
 .mm-panel_has-navbar
     padding-top: 100px
 .mm-panel
@@ -108,43 +82,7 @@ html.mm-wrapper_opened
 .mm-btn_prev
     &:hover
         background-color: #dcdcdc
-    
-.myButton 
-	-moz-box-shadow: inset 0px 1px 3px 0px #9fb4f2
-	-webkit-box-shadow: inset 0px 1px 3px 0px #9fb4f2
-	box-shadow: inset 0px 1px 3px 0px #9fb4f2
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #983222), color-stop(1, #983222))
-	background: -moz-linear-gradient(top, #983222 5%, #983222 100%)
-	background: -webkit-linear-gradient(top, #983222 5%, #983222 100%)
-	background: -o-linear-gradient(top, #983222 5%, #983222 100%)
-	background: -ms-linear-gradient(top, #983222 5%, #983222 100%)
-	background: linear-gradient(to bottom, #983222 5%, #983222 100%)
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#983222', endColorstr='#983222',GradientType=0)
-	background-color: #983222
-	-moz-border-radius: 5px
-	-webkit-border-radius: 5px
-	border-radius: 5px 
-	border: 1px solid #4e6096
-	display: inline-block
-	cursor: pointer
-	color: #ffffff
-	font-weight: bold
-	padding: 11px 23px
-	text-decoration: none
-	text-shadow: 0px -1px 0px #283966
-.myButton:hover 
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #d47666), color-stop(1, #531409))
-	background: -moz-linear-gradient(top, #d47666 5%, #531409 100%)
-	background: -webkit-linear-gradient(top, #d47666 5%, #531409 100%)
-	background: -o-linear-gradient(top, #d47666 5%, #531409 100%);
-	background: -ms-linear-gradient(top, #d47666 5%, #531409 100%)
-	background: linear-gradient(to bottom, #d47666 5%, #531409 100%)
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d47666', endColorstr='#531409',GradientType=0)
-	background-color: #983222
-.myButton
-    &:active 
-        position: relative
-        top: 1px
+//-----------------------------------menu_end
 .flex_header
     display: flex
     height: 100%
@@ -244,6 +182,7 @@ html.mm-wrapper_opened
         font-size: 20px
         color: $grey_c
         font-weight: 400
+//----------------------------------header_end
 .services
     position: relative
     &::before
@@ -327,42 +266,7 @@ html.mm-wrapper_opened
                 color: #781202
             
         
-.myButton-white 
-	-moz-box-shadow: inset 0px 1px 3px 0px #bababa
-	-webkit-box-shadow: inset 0px 1px 3px 0px #bababa
-	box-shadow: inset 0px 1px 3px 0px #bababa
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f2f2ea), color-stop(1, #fafafa))
-	background: -moz-linear-gradient(top, #f2f2ea 5%, #fafafa 100%)
-	background: -webkit-linear-gradient(top, #f2f2ea 5%, #fafafa 100%)
-	background: -o-linear-gradient(top, #f2f2ea 5%, #fafafa 100%)
-	background: -ms-linear-gradient(top, #f2f2ea 5%, #fafafa 100%)
-	background: linear-gradient(to bottom, #f2f2ea 5%, #fafafa 100%)
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2f2ea', endColorstr='#fafafa',GradientType=0)
-	background-color: #f2f2ea
-	-moz-border-radius: 5px
-	-webkit-border-radius: 5px
-	border-radius: 5px
-	border: 1px solid #f7f7f7
-	display: inline-block
-	cursor: pointer
-	color: #bfbfbe
-	padding: 11px 23px
-	text-decoration: none
-	text-shadow: 0px -1px 0px #fafafa
-.myButton-white
-    &:hover 
-        background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #fafafa), color-stop(1, #f2f2ea))
-        background: -moz-linear-gradient(top, #fafafa 5%, #f2f2ea 100%)
-        background: -webkit-linear-gradient(top, #fafafa 5%, #f2f2ea 100%)
-        background: -o-linear-gradient(top, #fafafa 5%, #f2f2ea 100%)
-        background: -ms-linear-gradient(top, #fafafa 5%, #f2f2ea 100%)
-        background: linear-gradient(to bottom, #fafafa 5%, #f2f2ea 100%)
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa', endColorstr='#f2f2ea',GradientType=0)
-        background-color: #fafafa
-.myButton-white
-    &:active 
-        position: relative
-        top: 1px
+
 .our_people
     position: relative
     .people
@@ -518,44 +422,51 @@ html.mm-wrapper_opened
             display: inline-block
             float: right
     .partner_h2
-        padding-top: 30px
-        margin-top: 10%
         color: #fff
         position: relative
-.partners
-    margin: auto
+        margin: auto
+        width: 90%
+        margin-left: 15px
+        text-align: center
+        padding-top: 40px
+        padding-bottom: 30px
+    .partners
+        min-height: 350px
+        vertical-align: middle
+        margin-top: 150px
+        width: 85%
+        margin-left: 5%
     .carousel-partners-content
-       width: 75%
+        width: 80%
+        margin-left: 5%
+    
 .flex_box_
 	margin-top: 8%
+//----------------------------------------footer
 footer
-    background-color: #80807F
-    .map
-        padding: 10px 0
+    background-color: #4B4B4A
     .logo_footer
-        padding-top: 25px
+        padding-top: 10px
         text-align: center
-        img
-            padding-top: 20px
         p
             font-size: 18px
-            margin-top: 10px
-            
+            padding: 10px 0
+    .map
+        padding: 10px 0
+   
     .footer_li
         padding: 10px 0
         width: 80%
         margin-left: 10%
-        margin-top: 5%
         display: block
         li
-            line-height: 47px
+            white-space: nowrap
             font-size: 18px
             display: block
             text-align: left
     .social_footer
         margin-top: -10px
         ul
-            margin: auto
             padding: 0
             list-style:  none
             display: inline-block
@@ -577,12 +488,33 @@ footer
             height: 38px
             width: 38px
             text-align: center
-            margin: 20px 0
             line-height: 38px
             transition: background-color .5s ease
             &:hover
                 background-color: #B1B1B0
                 transition: background-color .5s ease 
+.top_up
+    position: fixed
+    background-color: #e0e0e0
+    color: #4B4B4A
+    font-size: 26px
+    right: 20px
+    bottom: -200px
+    z-index: 20
+    cursor: pointer
+    width: 50px
+    height: 50px
+    line-height: 50px
+    border-radius: 10em
+    text-align: center
+    opacity: 0.5
+    transition: opacity .7s ease
+    &:hover
+        cursor: pointer
+        color: $accent        
+        opacity: 1
+        transition: opacity .7s ease
+
             
             
             

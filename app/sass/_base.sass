@@ -1,24 +1,105 @@
-*
-	box-sizing: border-box
-	&:before, &:after
-		box-sizing: border-box
 
 html, body
 	height: 100%
-
 body
-	font-size: 16px
-	min-width: 320px
-	position: relative
-	line-height: 1.65
-	font-family: raleway-example, sans-serif
-	overflow-x: hidden
-	opacity: 1
-
-.img-responsive
-	display: block
-	max-width: 100%
-	height: auto
-
-.text-center
-	text-align: center
+    font-size: 16px
+    min-width: 320px
+    position: relative
+    line-height: 1.75 
+    overflow-x: hidden
+    opacity: 1
+    font-family: 'PT_Sans-rst', sans-serif
+    letter-spacing: 1px
+    color: #fff
+    margin: 0
+    padding: 0
+body
+    a
+        text-decoration: none
+body a
+    &:hover
+       text-decoration: none
+body ul
+    list-style: none
+    padding: 0
+    margin: 0
+h1,h2,h3,h4,h5,h6
+    text-transform: uppercase
+    line-height: 1.4
+    font-family: 'Montserrat-rst'
+    text-align: center
+html.mm-wrapper_opened
+    overflow-y: scroll
+.myButton 
+    -moz-box-shadow: inset 0px 1px 3px 0px #9fb4f2
+    -webkit-box-shadow: inset 0px 1px 3px 0px #9fb4f2
+    box-shadow: inset 0px 1px 3px 0px #9fb4f2
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #983222), color-stop(1, #983222))
+    background: -moz-linear-gradient(top, #983222 5%, #983222 100%)
+    background: -webkit-linear-gradient(top, #983222 5%, #983222 100%)
+    background: -o-linear-gradient(top, #983222 5%, #983222 100%)
+    background: -ms-linear-gradient(top, #983222 5%, #983222 100%)
+    background: linear-gradient(to bottom, #983222 5%, #983222 100%)
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#983222', endColorstr='#983222',GradientType=0)
+    background-color: #983222
+    -moz-border-radius: 5px
+    -webkit-border-radius: 5px
+    border-radius: 5px 
+    border: 1px solid #4e6096
+    display: inline-block
+    cursor: pointer
+    color: #ffffff
+    font-weight: bold
+    margin-top: 10px
+    padding: 11px 23px
+    text-decoration: none
+    text-shadow: 0px -1px 0px #283966
+.myButton:hover 
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #d47666), color-stop(1, #531409))
+	background: -moz-linear-gradient(top, #d47666 5%, #531409 100%)
+	background: -webkit-linear-gradient(top, #d47666 5%, #531409 100%)
+	background: -o-linear-gradient(top, #d47666 5%, #531409 100%);
+	background: -ms-linear-gradient(top, #d47666 5%, #531409 100%)
+	background: linear-gradient(to bottom, #d47666 5%, #531409 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d47666', endColorstr='#531409',GradientType=0)
+	background-color: #983222
+.myButton
+    &:active 
+        position: relative
+        top: 1px
+.myButton-white 
+	-moz-box-shadow: inset 0px 1px 3px 0px #bababa
+	-webkit-box-shadow: inset 0px 1px 3px 0px #bababa
+	box-shadow: inset 0px 1px 3px 0px #bababa
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f2f2ea), color-stop(1, #fafafa))
+	background: -moz-linear-gradient(top, #f2f2ea 5%, #fafafa 100%)
+	background: -webkit-linear-gradient(top, #f2f2ea 5%, #fafafa 100%)
+	background: -o-linear-gradient(top, #f2f2ea 5%, #fafafa 100%)
+	background: -ms-linear-gradient(top, #f2f2ea 5%, #fafafa 100%)
+	background: linear-gradient(to bottom, #f2f2ea 5%, #fafafa 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2f2ea', endColorstr='#fafafa',GradientType=0)
+	background-color: #f2f2ea
+	-moz-border-radius: 5px
+	-webkit-border-radius: 5px
+	border-radius: 5px
+	border: 1px solid #f7f7f7
+	display: inline-block
+	cursor: pointer
+	color: #bfbfbe
+	padding: 11px 23px
+	text-decoration: none
+	text-shadow: 0px -1px 0px #fafafa
+.myButton-white
+    &:hover 
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #fafafa), color-stop(1, #f2f2ea))
+        background: -moz-linear-gradient(top, #fafafa 5%, #f2f2ea 100%)
+        background: -webkit-linear-gradient(top, #fafafa 5%, #f2f2ea 100%)
+        background: -o-linear-gradient(top, #fafafa 5%, #f2f2ea 100%)
+        background: -ms-linear-gradient(top, #fafafa 5%, #f2f2ea 100%)
+        background: linear-gradient(to bottom, #fafafa 5%, #f2f2ea 100%)
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa', endColorstr='#f2f2ea',GradientType=0)
+        background-color: #fafafa
+.myButton-white
+    &:active 
+        position: relative
+        top: 1px
