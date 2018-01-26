@@ -34,7 +34,7 @@ $(document).ready(function() {
         loop: true,
         smartSpeed: 700,
         nav: true,
-        navText: ['<i class="fa fa-angle-double-left"></i>','<i class="fa fa-angle-double-right"></i>'],
+        navText: ['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'],
         rresponsiveClass: true,
         responsive: {
         0: {
@@ -77,4 +77,7 @@ $(document).ready(function() {
 		});
 		return false;
 	});
+});
+$(window).on('load', function(){
+    $('.preloader').delay('2000').fadeOut('slow');
 });
