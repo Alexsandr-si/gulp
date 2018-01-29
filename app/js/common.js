@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    
     $('.button_slim').click(function() {
         $('.adso_p').addClass('animated fadeInDown');
     });
