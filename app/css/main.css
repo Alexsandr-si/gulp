@@ -162,6 +162,21 @@ html.mm-wrapper_opened {
     background-color: #B1B1B0;
     transition: background-color .7s ease; }
 
+.button_slim {
+  border: 2px solid #983222;
+  cursor: pointer;
+  padding: 10px;
+  transition: background-color .7s ease;
+  bottom: 22px;
+  width: 66%;
+  margin-left: 14%;
+  position: absolute;
+  text-align: center; }
+  .button_slim:hover {
+    background-color: #E5E5E5;
+    transition: background-color .7s ease;
+    color: #983222; }
+
 .color_class {
   color: #983222; }
 
@@ -208,14 +223,15 @@ html.mm-wrapper_opened {
     .top_line .fhone .fa {
       font-size: 22px;
       margin-right: 15px; }
-  .top_line .menu_top {
-    position: fixed;
-    right: 0;
-    top: 22px;
-    z-index: 80; }
-    .top_line .menu_top .hamburger-inner, .top_line .menu_top .hamburger-inner::after, .top_line .menu_top .hamburger-inner::before {
-      background-color: #983222;
-      border-radius: 0; }
+
+.menu_top {
+  position: fixed;
+  right: 0;
+  top: 22px;
+  z-index: 80; }
+  .menu_top .hamburger-inner, .menu_top .hamburger-inner::after, .menu_top .hamburger-inner::before {
+    background-color: #983222;
+    border-radius: 0; }
 
 .mm-panel_has-navbar {
   padding-top: 150px;
@@ -241,7 +257,9 @@ html.mm-wrapper_opened {
   background-color: #dcdcdc; }
 
 .mm-listitem {
-  border-bottom: none; }
+  border-bottom: none;
+  text-transform: uppercase;
+  letter-spacing: 2px; }
   .mm-listitem::after {
     border-bottom: none; }
 
@@ -250,7 +268,8 @@ html.mm-wrapper_opened {
 
 .mm-listitem a {
   padding-left: 10%;
-  background-color: #616160; }
+  background-color: #616160;
+  transition: background-color .7s; }
   .mm-listitem a:hover {
     color: #983222;
     background-color: #dcdcdc;
@@ -425,18 +444,9 @@ html.mm-wrapper_opened {
       margin-top: 30px; }
     .our_futures .wallpaper a {
       color: #983222;
-      border: 1px solid #983222;
-      cursor: pointer;
-      padding: 10px;
-      transition: background-color .7s ease;
-      bottom: 22px;
-      width: 66%;
-      margin-left: 14%;
-      position: absolute;
-      text-align: center; }
-      .our_futures .wallpaper a:hover {
-        background-color: #E5E5E5;
-        transition: background-color .7s ease; }
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-weight: 600; }
 
 .services {
   position: relative; }
@@ -466,6 +476,22 @@ html.mm-wrapper_opened {
   .section_h2 img {
     width: 100%;
     height: auto; }
+
+.full_text {
+  position: relative;
+  width: 100%; }
+  .full_text .adso_p {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 97%;
+    margin-left: 1.5%;
+    z-index: 10;
+    left: 0px;
+    padding: 30px;
+    background-color: #616160;
+    border: 2px solid #fff;
+    height: 300px; }
 
 .carousel-services {
   position: relative;
@@ -529,14 +555,38 @@ html.mm-wrapper_opened {
         text-decoration: none;
         color: #781202; }
 
-.wrap_services_img {
-  position: relative;
-  transition: background-color .7s ease; }
-  .wrap_services_img:hover {
+.wrap_service {
+  margin-top: 10px;
+  margin-bottom: 30px; }
+  .wrap_service .wrap_services_img {
+    position: relative;
     transition: background-color .7s ease;
-    background-color: #000;
-    cursor: pointer; }
-  .wrap_services_img .h4_ser {
+    height: 300px; }
+    .wrap_service .wrap_services_img .myspan {
+      background-color: rgba(97, 97, 96, 0.9);
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      opacity: 0;
+      transition: opacity 1s ease;
+      color: #fff; }
+    .wrap_service .wrap_services_img b {
+      bottom: 100px;
+      left: 60px;
+      margin-left: 0;
+      text-transform: uppercase;
+      letter-spacing: 2px; }
+  .wrap_service:hover {
+    transition: all .7s ease;
+    cursor: pointer;
+    padding-top: -40px; }
+    .wrap_service:hover .myspan {
+      opacity: 1;
+      transition: all .7s ease; }
+  .wrap_service .h4_ser {
     position: absolute;
     bottom: 0;
     background-color: #222845;
@@ -773,21 +823,24 @@ footer {
     padding: 0;
     text-align: center;
     position: relative;
-    top: 20%; }
+    top: 6%; }
     footer .logo_footer p {
       font-size: 18px;
-      padding-top: 10px; }
+      padding-top: 4px; }
   footer .map {
     padding: 10px 0; }
+  footer img {
+    width: 150px;
+    height: 60px; }
   footer .footer_li {
     padding: 0;
     width: 80%;
     margin-left: 10%;
     display: block;
-    line-height: 35px;
+    line-height: 40px;
     font-weight: 200;
     position: relative;
-    top: 20%; }
+    top: 11%; }
     footer .footer_li li {
       white-space: nowrap;
       font-size: 18px;
@@ -797,7 +850,7 @@ footer {
         color: #616160;
         margin-right: 5px; }
   footer .social_footer {
-    margin-top: -10px; }
+    margin-top: -15px; }
     footer .social_footer ul {
       padding: 0;
       list-style: none;

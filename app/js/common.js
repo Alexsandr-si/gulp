@@ -1,5 +1,10 @@
 $(document).ready(function() {
-     $('#my-menu').mmenu({
+    
+    $('.button_slim').click(function() {
+        $('.adso_p').addClass('animated fadeInDown');
+    });
+    
+    $('#my-menu').mmenu({
          "extensions": [ "position-back", "position-right", "effect-menu-slide"],
           navbar: { title: '<img src="img/logo.png" alt="РосАтомАудит">'}
     });
